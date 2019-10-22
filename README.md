@@ -18,6 +18,7 @@ let nomeCliente = xmlParser.obterString(`//${prefixo}:nomeCliente`);
 //É possível ler uma lista de tags e obter um array com os valores encontrados.
 //Aqui é retornado um array bidimensional, onde para cada pedido encontrado
 //é retornado um array com seus respectivos nós filhos.
+//Caso não seja encontrado é retornado um array vazio.
 let pedidos = xmlParser.obterMultiString("//pedido", [".//nomeProduto", ".//valorProduto"]);
 
 
